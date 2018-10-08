@@ -1,0 +1,221 @@
+$login-info-width: 300px !default;
+$login-info-opacity: 0.7 !default;
+$login-background-color: $editor-background-color !default;
+// Get more background images from unsplash.com (remember to optimize the filesize)
+$login-background-image: "images/ILogin.jpg" !default;
+$signup-background-image: "images/ISignup.jpg" !default;
+$ques-background-image: "images/IQues.jpg" !default;
+$tab-background-image: "images/ITab.jpg" !default;
+$thm-background-image: "images/IThm.jpg" !default;
+$dis1-background-image: "images/Disp1.jpg" !default;
+$dis2-background-image: "images/Disp2.jpg" !default;
+$view-padding: round($v-unit-size / 1.5) !default;
+
+
+.login .v-header{
+    font-size:20px;
+    color: #fff;
+    }
+ .btblue
+ {
+ 
+ padding: 0 14px;
+    color: #2196F3;
+    font-size: 12px;
+    width: 125px;
+    height: 30px;
+    font-weight: bold;
+     border-radius: 0px;
+ }
+.whicol
+{
+color: #ffffff;
+}
+ 
+ .dis1
+{
+	background: $editor-background-color;
+    @if $login-background-image {
+      background-image: url(#{$dis1-background-image});
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+}
+
+
+.dis2
+{
+	background: $editor-background-color;
+    @if $login-background-image {
+      background-image: url(#{$dis2-background-image});
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+}
+ 
+ .thm
+{
+	background: $editor-background-color;
+    @if $login-background-image {
+      background-image: url(#{$thm-background-image});
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+}
+ 
+ .tab
+{
+	background: $editor-background-color;
+    @if $login-background-image {
+      background-image: url(#{$tab-background-image});
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+}
+  
+.ques
+{
+	background: $editor-background-color;
+    @if $login-background-image {
+      background-image: url(#{$ques-background-image});
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+}
+    
+.border
+{
+border:3px solid #2196F3;
+background: $v-selection-color; // For IE8
+background-color:rgba(248, 249, 251, 0.39);
+}
+
+.noborder
+{
+border:1px solid #FFFFFF;
+background: $v-selection-color; // For IE8
+background-color:rgba(248, 249, 251, 0.39);
+}
+    
+.signup
+{
+	background: $editor-background-color;
+
+    @if $login-background-image {
+      background-image: url(#{$signup-background-image});
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+    
+    width: 100%;
+    height: 100%;
+
+    .login-form {
+      @include valo-panel-style;
+      border:1px solid #2196F3;
+      color: #ffffff;
+       font-weight:bold;
+      background: $v-selection-color; // For IE8
+      background-color:rgba(248, 249, 251, 0);
+      padding: $v-layout-margin;
+      @include valo-animate-in-fade($duration: 1s);
+    }
+
+    .login-information {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $login-info-width;
+      height: 100%;
+      background: $v-selection-color; // For IE8
+      background-color:rgba(248, 249, 251, 0.39);
+      padding-left:20px;
+      padding-top: 20px;
+      color: #197de1;
+      @include animation(valo-animate-in-fade 1s 1s backwards);
+
+      h1 {
+      
+        color: inherit;
+      }
+    }
+
+    .centering-layout {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding-left: $login-info-width;
+
+      .v-slot {
+        height: 100%;
+      }
+    }
+    .v-caption-logintitle{
+    font-size:20px;
+   font-weight:bold;
+    
+    
+    }
+}
+.login {
+    background: $editor-background-color;
+
+    @if $login-background-image {
+      background-image: url(#{$login-background-image});
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+   
+
+    width: 100%;
+    height: 100%;
+
+    .login-form {
+      @include valo-panel-style;
+      border:1px solid #2196F3;
+      color: #fafafa;
+       font-weight:bold;
+      background: $v-selection-color; // For IE8
+      background-color:rgba(248, 249, 251, 0.39);
+      padding: $v-layout-margin;
+      @include valo-animate-in-fade($duration: 1s);
+    }
+
+    .login-information {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $login-info-width;
+      height: 100%;
+      background: $v-selection-color; // For IE8
+      background-color:rgba(248, 249, 251, 0.39);
+      padding-left:20px;
+      padding-top: 20px;
+      color: #197de1;
+      @include animation(valo-animate-in-fade 1s 1s backwards);
+
+      h1 {
+      
+        color: inherit;
+      }
+    }
+
+    .centering-layout {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding-left: $login-info-width;
+
+      .v-slot {
+        height: 100%;
+      }
+    }
+    .v-caption-logintitle{
+    font-size:20px;
+   font-weight:bold;
+    
+    
+    }
+  }
